@@ -1,0 +1,40 @@
+---
+title: "Installing R and RStudio on a Windows 10 Machine"
+subtitle: "with as much functionality as possible"
+author: "Raoul Wolf"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This is a very rough and unofficial guide for setting up R and RStudio on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source. 
+
+All software, version numbers and links were last referenced on `r Sys.Date()`. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
+
+# Neccessary Software
+
+The following is a list of the neccessary **software** components to download. This is based on the official [R project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the *version* numbers are highly likely to change frequently. 
+
+* [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
+* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
+* [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
+* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.5.9*: <http://www.jrsoftware.org/download.php/is.exe>
+* [**Strawberry Perl**](http://strawberryperl.com/) *5.26.2.1*: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
+* [**RStudio**](https://www.rstudio.com/products/rstudio/) *1.1.453*: <https://download1.rstudio.org/RStudio-1.1.453.exe>
+
+# Installation procedure
+## Installation order
+
+Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):
+
+1) **R**
+2) **Rtools**
+3) **MiKTeX**
+4) **Inno Setup**
+5) **Strawberry Perl**
+6) **RStudio**
