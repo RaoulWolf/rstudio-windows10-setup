@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Installing R and RStudio on a Windows 10 Machine</h1>
-<h3 class="subtitle"><em>with as much functionality as possible</em></h3>
+<h3 class="subtitle"><em>An incomplete and unofficial guide</em></h3>
 <h4 class="author"><em>Raoul Wolf</em></h4>
 <h4 class="date"><em>2018-06-07</em></h4>
 
@@ -129,19 +129,19 @@ $(document).ready(function () {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>This is a very rough and unofficial guide for setting up R and RStudio on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source.</p>
+<p>This is a very rough and unofficial guide for setting up <strong>R</strong> and <strong>RStudio</strong> on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source.</p>
 <p>All software, version numbers and links were last referenced on 2018-06-07. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!</p>
 </div>
 <div id="neccessary-software" class="section level1">
 <h1>Neccessary Software</h1>
-<p>The following is a list of the neccessary <strong>software</strong> components to download. This is based on the official <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt">R project recommendations</a>. Note that the <em>version</em> numbers are highly likely to change frequently.</p>
+<p>The following is a list of the neccessary <strong>software</strong> components to download. This is based on the official <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt"><strong>R</strong> project recommendations</a>. Note that the <span style="color:red"><em>version</em></span> numbers are highly likely to change frequently.</p>
 <ul>
-<li><a href="https://cloud.r-project.org/index.html"><strong>R</strong></a> <em>3.5.0</em>: <a href="https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe" class="uri">https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe</a></li>
-<li><a href="https://cloud.r-project.org/bin/windows/Rtools/"><strong>Rtools</strong></a> <em>3.5</em>: <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe" class="uri">https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe</a></li>
-<li><a href="https://miktex.org/"><strong>MiKTeX</strong></a> <em>2.9.6643</em>: <a href="https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe" class="uri">https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe</a></li>
-<li><a href="http://www.jrsoftware.org/isinfo.php"><strong>Inno Setup</strong></a> <em>5.5.9</em>: <a href="http://www.jrsoftware.org/download.php/is.exe" class="uri">http://www.jrsoftware.org/download.php/is.exe</a></li>
-<li><a href="http://strawberryperl.com/"><strong>Strawberry Perl</strong></a> <em>5.26.2.1</em>: <a href="http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi" class="uri">http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi</a></li>
-<li><a href="https://www.rstudio.com/products/rstudio/"><strong>RStudio</strong></a> <em>1.1.453</em>: <a href="https://download1.rstudio.org/RStudio-1.1.453.exe" class="uri">https://download1.rstudio.org/RStudio-1.1.453.exe</a></li>
+<li><p><a href="https://cloud.r-project.org/index.html"><strong>R</strong></a> <span style="color:red"><em>3.5.0</em></span>: <a href="https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe" class="uri">https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe</a></p></li>
+<li><p><a href="https://cloud.r-project.org/bin/windows/Rtools/"><strong>Rtools</strong></a> <span style="color:red"><em>3.5</em></span>: <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe" class="uri">https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe</a></p></li>
+<li><p><a href="https://miktex.org/"><strong>MiKTeX</strong></a> <span style="color:red"><em>2.9.6643</em></span>: <a href="https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe" class="uri">https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe</a></p></li>
+<li><p><a href="http://www.jrsoftware.org/isinfo.php"><strong>Inno Setup</strong></a> <span style="color:red"><em>5.5.9</em></span>: <a href="http://www.jrsoftware.org/download.php/is.exe" class="uri">http://www.jrsoftware.org/download.php/is.exe</a></p></li>
+<li><p><a href="http://strawberryperl.com/"><strong>Strawberry Perl</strong></a> <span style="color:red"><em>5.26.2.1</em></span>: <a href="http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi" class="uri">http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi</a></p></li>
+<li><p><a href="https://www.rstudio.com/products/rstudio/"><strong>RStudio</strong></a> <span style="color:red"><em>1.1.453</em></span>: <a href="https://download1.rstudio.org/RStudio-1.1.453.exe" class="uri">https://download1.rstudio.org/RStudio-1.1.453.exe</a></p></li>
 </ul>
 </div>
 <div id="installation-procedure" class="section level1">
@@ -150,12 +150,12 @@ $(document).ready(function () {
 <h2>Installation order</h2>
 <p>Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):</p>
 <ol style="list-style-type: decimal">
-<li><strong>R</strong></li>
-<li><strong>Rtools</strong></li>
-<li><strong>MiKTeX</strong></li>
-<li><strong>Inno Setup</strong></li>
-<li><strong>Strawberry Perl</strong></li>
-<li><strong>RStudio</strong></li>
+<li><p><strong>R</strong></p></li>
+<li><p><strong>Rtools</strong></p></li>
+<li><p><strong>MiKTeX</strong></p></li>
+<li><p><strong>Inno Setup</strong></p></li>
+<li><p><strong>Strawberry Perl</strong></p></li>
+<li><p><strong>RStudio</strong></p></li>
 </ol>
 </div>
 </div>
