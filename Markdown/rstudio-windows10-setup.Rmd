@@ -14,19 +14,19 @@ All software, version numbers and links were last referenced on 2018-06-07. The 
 
 # Neccessary Software
 
-The following is a list of the neccessary **software** components to download. This is based on the official [**R** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the <span style="color:red">*version*</span> numbers are highly likely to change frequently. 
+The following is a list of the neccessary **software** components to download. This is based on the official [**R** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the *version* numbers are highly likely to change frequently. 
 
-* [**R**](https://cloud.r-project.org/index.html) <span style="color:red">*3.5.0*</span>: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
+* [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
 
-* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) <span style="color:red">*3.5*</span>: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
+* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
 
-* [**MiKTeX**](https://miktex.org/) <span style="color:red">*2.9.6643*</span>: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
+* [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
 
-* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) <span style="color:red">*5.5.9*</span>: <http://www.jrsoftware.org/download.php/is.exe>
+* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.5.9*: <http://www.jrsoftware.org/download.php/is.exe>
 
-* [**Strawberry Perl**](http://strawberryperl.com/) <span style="color:red">*5.26.2.1*</span>: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
+* [**Strawberry Perl**](http://strawberryperl.com/) *5.26.2.1*: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
 
-* [**RStudio**](https://www.rstudio.com/products/rstudio/) <span style="color:red">*1.1.453*</span>: <https://download1.rstudio.org/RStudio-1.1.453.exe>
+* [**RStudio**](https://www.rstudio.com/products/rstudio/) *1.1.453*: <https://download1.rstudio.org/RStudio-1.1.453.exe>
 
 # Installation procedure
 
@@ -48,6 +48,22 @@ Instead of installing the different software randomly, it is preferable to insta
 
 6) **RStudio**
 
-## Install R
+## Install **R**
 
 Install R using all default parameters. 
+
+## Install **Rtools**
+
+Install Rtools with all additional components and link in your users environment. 
+
+## Install **MiKTeX**, **Inno Setup** and **Strawberry Perl**
+
+## Install **RStudio**
+
+# Adjust your accounts environment variables
+
+Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\[your user name]\R\R-3.5.0\library`. However, R does usually not automatically identify your library locations; that's where `R_LIBS` and `R_LIBS_USER` come into play.
+
+## `R_LIBS`: **R**s System Library
+
+## `R_LIBS_USER`: **R**s (and your) User Library
