@@ -11,7 +11,7 @@
 
 <meta name="author" content="Raoul Wolf" />
 
-<meta name="date" content="2018-06-07" />
+<meta name="date" content="2018-06-08" />
 
 <title>Installing R and RStudio on a Windows 10 Machine</title>
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
 <h1 class="title toc-ignore">Installing R and RStudio on a Windows 10 Machine</h1>
 <h3 class="subtitle"><em>An incomplete and unofficial guide</em></h3>
 <h4 class="author"><em>Raoul Wolf</em></h4>
-<h4 class="date"><em>2018-06-07</em></h4>
+<h4 class="date"><em>2018-06-08</em></h4>
 
 </div>
 
@@ -176,12 +176,9 @@ $(document).ready(function () {
 </div>
 <div id="adjust-your-accounts-environment-variables" class="section level1">
 <h1>Adjust your accounts environment variables</h1>
-<p>Per default, <strong>R</strong>s System Library is installed in <code>C:\Program Files\R\R-3.5.0\library</code>. Here, all essential <em>base</em> packages are located. For additional packages, it is advisable to setup a User Library, e.g., at <code>C:\Users\[your user name]\R\R-3.5.0\library</code>. However, R does usually not automatically identify your library locations; that’s where <code>R_LIBS</code> and <code>R_LIBS_USER</code> come into play.</p>
-<div id="r_libs-rs-system-library" class="section level2">
-<h2><code>R_LIBS</code>: <strong>R</strong>s System Library</h2>
-</div>
-<div id="r_libs_user-rs-and-your-user-library" class="section level2">
-<h2><code>R_LIBS_USER</code>: <strong>R</strong>s (and your) User Library</h2>
+<p>Per default, <strong>R</strong>s System Library is installed in <code>C:\Program Files\R\R-3.5.0\library</code>. Here, all essential <em>base</em> packages are located. For additional packages, it is advisable to setup a User Library, e.g., at <code>C:\Users\Documents\[your user name]\R\win-library\3.5</code>. However, because [your employer] outsources your user account’s <code>Documents</code> folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that’s where <code>R_LIBS_USER</code> comes into play.</p>
+<div id="r_libs_user-rs-and-your-user-library-for-packages" class="section level2">
+<h2><code>R_LIBS_USER</code>: <strong>R</strong>s (and your) user library for packages</h2>
 </div>
 </div>
 

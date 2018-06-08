@@ -62,8 +62,6 @@ Install Rtools with all additional components and link in your users environment
 
 # Adjust your accounts environment variables
 
-Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\[your user name]\R\R-3.5.0\library`. However, R does usually not automatically identify your library locations; that's where `R_LIBS` and `R_LIBS_USER` come into play.
+Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
-## `R_LIBS`: **R**s System Library
-
-## `R_LIBS_USER`: **R**s (and your) User Library
+## `R_LIBS_USER`: **R**s (and your) user library for packages
