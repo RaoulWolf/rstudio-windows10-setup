@@ -62,6 +62,12 @@ Install Rtools with all additional components and link in your users environment
 
 # Adjust your accounts environment variables
 
-Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
+Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
 ## `R_LIBS_USER`: **R**s (and your) user library for packages
+
+As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to `C:\Users\[user name]`, where you create a new folder called `R`. Inside `R`, place a folder named `win-library`, which contains another folder called `3.5`, indicating the **R** version in use. You should end up with the following path: `C:\Users\[your user name]\R\win-library\3.5`. The next step is to create the `R_LIBS_USER` environment variable.
+
+You can create your `R_LIBS_USER` environment variable in graphically. Open the Windows Settings application and start typing "environment" in the "Find a setting" search box. Out of the suggestions that appear, choose "Edit anvironment variables for your account", which causes the "Environment Variables" window to pop up.
+
+Under "User Variables for [user name]", click "New..."" and enter the following information: "Variable name:" `R_LIBS_USER` and "Variable value:" `C:\Users\[user name]\R\win-library\3.5`.
