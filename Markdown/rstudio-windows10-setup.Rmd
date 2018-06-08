@@ -70,4 +70,4 @@ As stated above, we have to manually create the folder in which the User Library
 
 You can create your `R_LIBS_USER` environment variable in graphically. Open the Windows Settings application and start typing "environment" in the "Find a setting" search box. Out of the suggestions that appear, choose "Edit anvironment variables for your account", which causes the "Environment Variables" window to pop up.
 
-Under "User Variables for [user name]", click "New..."" and enter the following information: "Variable name:" `R_LIBS_USER` and "Variable value:" `C:\Users\[user name]\R\win-library\3.5`.
+Under "User Variables for [user name]", click "New..." and enter the following information: "Variable name:" `R_LIBS_USER` and "Variable value:" `C:\Users\[user name]\R\win-library\3.5`.
