@@ -18,7 +18,7 @@ The following is a list of the neccessary **software** components to download. T
 
 * [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
 
-* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
+* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5.0.4*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
 
 * [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
 
