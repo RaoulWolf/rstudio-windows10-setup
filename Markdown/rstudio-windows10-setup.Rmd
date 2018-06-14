@@ -16,37 +16,39 @@ All software, version numbers and links were last referenced on 2018-06-07. The 
 
 The following is a list of the neccessary **software** components to download. This is based on the official [**R** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the *version* numbers are highly likely to change frequently. 
 
-* [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
-
-* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5.0.4*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
-
 * [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
 
 * [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.5.9*: <http://www.jrsoftware.org/download.php/is.exe>
 
 * [**Strawberry Perl**](http://strawberryperl.com/) *5.26.2.1*: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
 
+* [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
+
+* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5.0.4*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
+
 * [**RStudio**](https://www.rstudio.com/products/rstudio/) *1.1.453*: <https://download1.rstudio.org/RStudio-1.1.453.exe>
 
-# Installation procedure
+# Installation Procedure
 
 <span style="color:red">**Make sure to install all software with administrator privileges! You can do so by right-clicking on the file and choose "Run as administrator". If you do not install software with administrator privileges, the installation will either fail or corrupt the functionality of R. You have been warned.**</span>
 
-## Installation order
+## Installation Order
 
 Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):
 
-1) **R**
+1) **MiKTeX**
 
-2) **Rtools**
+2) **Inno Setup**
 
-3) **MiKTeX**
+3) **Strawberry Perl**
 
-4) **Inno Setup**
+4) **R**
 
-5) **Strawberry Perl**
+5) **Rtools**
 
 6) **RStudio**
+
+## Install **MiKTeX**, **Inno Setup** and **Strawberry Perl**
 
 ## Install **R**
 
@@ -56,15 +58,13 @@ Install R using all default parameters.
 
 Install Rtools with all additional components and link in your users environment. 
 
-## Install **MiKTeX**, **Inno Setup** and **Strawberry Perl**
-
 ## Install **RStudio**
 
-# Adjust your accounts environment variables
+# Adjust Your Account's Environment Variables
 
 Per default, **R**s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
-## `R_LIBS_USER`: **R**s (and your) user library for packages
+## `R_LIBS_USER`: **R**'s (and Your) User Library for Packages
 
 As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to `C:\Users\[user name]`, where you create a new folder called `R`. Inside `R`, place a folder named `win-library`, which contains another folder called `3.5`, indicating the **R** version in use. You should end up with the following path: `C:\Users\[your user name]\R\win-library\3.5`. The next step is to create the `R_LIBS_USER` environment variable.
 
