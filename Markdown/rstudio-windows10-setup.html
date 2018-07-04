@@ -11,7 +11,7 @@
 
 <meta name="author" content="Raoul Wolf" />
 
-<meta name="date" content="2018-06-14" />
+<meta name="date" content="2018-07-04" />
 
 <title>Installing R and RStudio on a Windows 10 Machine</title>
 
@@ -125,7 +125,7 @@ $(document).ready(function () {
 <h1 class="title toc-ignore">Installing R and RStudio on a Windows 10 Machine</h1>
 <h3 class="subtitle"><em>An incomplete and unofficial guide</em></h3>
 <h4 class="author"><em>Raoul Wolf</em></h4>
-<h4 class="date"><em>2018-06-14</em></h4>
+<h4 class="date"><em>2018-07-04</em></h4>
 
 </div>
 
@@ -140,9 +140,9 @@ $(document).ready(function () {
 <p>The following is a list of the neccessary <strong>software</strong> components to download. This is based on the official <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt"><strong>R</strong> project recommendations</a>. Note that the <em>version</em> numbers are highly likely to change frequently.</p>
 <ul>
 <li><p><a href="https://miktex.org/"><strong>MiKTeX</strong></a> <em>2.9.6643</em>: <a href="https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe" class="uri">https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe</a></p></li>
-<li><p><a href="http://www.jrsoftware.org/isinfo.php"><strong>Inno Setup</strong></a> <em>5.5.9</em>: <a href="http://www.jrsoftware.org/download.php/is.exe" class="uri">http://www.jrsoftware.org/download.php/is.exe</a></p></li>
+<li><p><a href="http://www.jrsoftware.org/isinfo.php"><strong>Inno Setup</strong></a> <em>5.6.1</em>: <a href="http://www.jrsoftware.org/download.php/is.exe" class="uri">http://www.jrsoftware.org/download.php/is.exe</a></p></li>
 <li><p><a href="http://strawberryperl.com/"><strong>Strawberry Perl</strong></a> <em>5.26.2.1</em>: <a href="http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi" class="uri">http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi</a></p></li>
-<li><p><a href="https://cloud.r-project.org/index.html"><strong>R</strong></a> <em>3.5.0</em>: <a href="https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe" class="uri">https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe</a></p></li>
+<li><p><a href="https://cloud.r-project.org/index.html"><strong>R</strong></a> <em>3.5.1</em>: <a href="https://cloud.r-project.org/bin/windows/base/R-3.5.1-win.exe" class="uri">https://cloud.r-project.org/bin/windows/base/R-3.5.1-win.exe</a></p></li>
 <li><p><a href="https://cloud.r-project.org/bin/windows/Rtools/"><strong>Rtools</strong></a> <em>3.5.0.4</em>: <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe" class="uri">https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe</a></p></li>
 <li><p><a href="https://www.rstudio.com/products/rstudio/"><strong>RStudio</strong></a> <em>1.1.453</em>: <a href="https://download1.rstudio.org/RStudio-1.1.453.exe" class="uri">https://download1.rstudio.org/RStudio-1.1.453.exe</a></p></li>
 </ul>
@@ -150,6 +150,7 @@ $(document).ready(function () {
 <div id="installation-procedure" class="section level1">
 <h1>Installation Procedure</h1>
 <p><span style="color:red"><strong>Make sure to install all software with administrator privileges! You can do so by right-clicking on the file and choose “Run as administrator”. If you do not install software with administrator privileges, the installation will either fail or corrupt the functionality of R. You have been warned.</strong></span></p>
+<p><strong>NOTE</strong>: If you are using the <a href="https://chocolatey.org/">Chocolatey package manager</a>, you can install all necessary software from there, <span style="color:red"><em>except Rtools</em></span>. Make sure to still follow the installation order mentioned below.</p>
 <div id="installation-order" class="section level2">
 <h2>Installation Order</h2>
 <p>Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):</p>

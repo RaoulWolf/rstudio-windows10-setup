@@ -18,11 +18,11 @@ The following is a list of the neccessary **software** components to download. T
 
 * [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
 
-* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.5.9*: <http://www.jrsoftware.org/download.php/is.exe>
+* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.6.1*: <http://www.jrsoftware.org/download.php/is.exe>
 
 * [**Strawberry Perl**](http://strawberryperl.com/) *5.26.2.1*: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
 
-* [**R**](https://cloud.r-project.org/index.html) *3.5.0*: <https://cloud.r-project.org/bin/windows/base/R-3.5.0-win.exe>
+* [**R**](https://cloud.r-project.org/index.html) *3.5.1*: <https://cloud.r-project.org/bin/windows/base/R-3.5.1-win.exe>
 
 * [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5.0.4*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
 
@@ -31,6 +31,8 @@ The following is a list of the neccessary **software** components to download. T
 # Installation Procedure
 
 <span style="color:red">**Make sure to install all software with administrator privileges! You can do so by right-clicking on the file and choose "Run as administrator". If you do not install software with administrator privileges, the installation will either fail or corrupt the functionality of R. You have been warned.**</span>
+
+**NOTE**: If you are using the [Chocolatey package manager](https://chocolatey.org/), you can install all necessary software from there, <span style="color:red">*except Rtools*</span>. Make sure to still follow the installation order mentioned below. 
 
 ## Installation Order
 
