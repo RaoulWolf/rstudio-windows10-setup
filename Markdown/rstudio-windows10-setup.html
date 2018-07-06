@@ -132,13 +132,14 @@ $(document).ready(function () {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>This is a very rough and unofficial guide for setting up <strong>R</strong> and <strong>RStudio</strong> on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source.</p>
+<p>This is a very rough and unofficial guide for setting up <strong>R</strong> and <strong>RStudio</strong> on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.</p>
 <p>All software, version numbers and links were last referenced on 2018-06-07. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!</p>
 </div>
 <div id="neccessary-software" class="section level1">
 <h1>Neccessary Software</h1>
 <p>The following is a list of the neccessary <strong>software</strong> components to download. This is based on the official <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt"><strong>R</strong> project recommendations</a>. Note that the <em>version</em> numbers are highly likely to change frequently.</p>
 <ul>
+<li><p><a href="https://git-scm.com/"><strong>Git</strong></a> <em>2.18.0</em>: <a href="https://git-scm.com/download/win" class="uri">https://git-scm.com/download/win</a></p></li>
 <li><p><a href="https://miktex.org/"><strong>MiKTeX</strong></a> <em>2.9.6643</em>: <a href="https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe" class="uri">https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe</a></p></li>
 <li><p><a href="http://www.jrsoftware.org/isinfo.php"><strong>Inno Setup</strong></a> <em>5.6.1</em>: <a href="http://www.jrsoftware.org/download.php/is.exe" class="uri">http://www.jrsoftware.org/download.php/is.exe</a></p></li>
 <li><p><a href="http://strawberryperl.com/"><strong>Strawberry Perl</strong></a> <em>5.26.2.1</em>: <a href="http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi" class="uri">http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi</a></p></li>
@@ -155,6 +156,7 @@ $(document).ready(function () {
 <h2>Installation Order</h2>
 <p>Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):</p>
 <ol style="list-style-type: decimal">
+<li><p><strong>Git</strong></p></li>
 <li><p><strong>MiKTeX</strong></p></li>
 <li><p><strong>Inno Setup</strong></p></li>
 <li><p><strong>Strawberry Perl</strong></p></li>
@@ -163,8 +165,8 @@ $(document).ready(function () {
 <li><p><strong>RStudio</strong></p></li>
 </ol>
 </div>
-<div id="install-miktex-inno-setup-and-strawberry-perl" class="section level2">
-<h2>Install <strong>MiKTeX</strong>, <strong>Inno Setup</strong> and <strong>Strawberry Perl</strong></h2>
+<div id="install-git-miktex-inno-setup-and-strawberry-perl" class="section level2">
+<h2>Install <strong>Git</strong>, <strong>MiKTeX</strong>, <strong>Inno Setup</strong> and <strong>Strawberry Perl</strong></h2>
 </div>
 <div id="install-r" class="section level2">
 <h2>Install <strong>R</strong></h2>

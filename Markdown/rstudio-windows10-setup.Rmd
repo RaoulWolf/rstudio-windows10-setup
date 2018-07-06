@@ -8,13 +8,15 @@ output: html_document
 
 # Introduction
 
-This is a very rough and unofficial guide for setting up **R** and **RStudio** on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source. 
+This is a very rough and unofficial guide for setting up **R** and **RStudio** on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control. 
 
 All software, version numbers and links were last referenced on 2018-06-07. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 # Neccessary Software
 
 The following is a list of the neccessary **software** components to download. This is based on the official [**R** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the *version* numbers are highly likely to change frequently. 
+
+* [**Git**](https://git-scm.com/) *2.18.0*: <https://git-scm.com/download/win>
 
 * [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
 
@@ -38,19 +40,21 @@ The following is a list of the neccessary **software** components to download. T
 
 Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):
 
-1) **MiKTeX**
+1) **Git**
 
-2) **Inno Setup**
+2) **MiKTeX**
 
-3) **Strawberry Perl**
+3) **Inno Setup**
 
-4) **R**
+4) **Strawberry Perl**
 
-5) **Rtools**
+5) **R**
 
-6) **RStudio**
+6) **Rtools**
 
-## Install **MiKTeX**, **Inno Setup** and **Strawberry Perl**
+7) **RStudio**
+
+## Install **Git**, **MiKTeX**, **Inno Setup** and **Strawberry Perl**
 
 ## Install **R**
 
