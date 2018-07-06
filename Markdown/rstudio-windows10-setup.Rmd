@@ -58,7 +58,7 @@ Install R using all default parameters.
 
 ## Install **Rtools**
 
-Install Rtools with all additional components and link in your users environment. 
+Install Rtools with all additional components (e.g., tcl/tk) and link in your users environment. 
 
 ## Install **RStudio**
 
