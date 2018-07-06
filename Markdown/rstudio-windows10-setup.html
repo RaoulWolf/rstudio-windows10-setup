@@ -172,7 +172,7 @@ $(document).ready(function () {
 </div>
 <div id="install-rtools" class="section level2">
 <h2>Install <strong>Rtools</strong></h2>
-<p>Install Rtools with all additional components (e.g., tcl/tk) and link in your users environment.</p>
+<p>Install Rtools with all additional components. That means also ticking the box “Extras to build R itself: ICU, TexInfo, TclTk”. Also, allow Rtools to create a link in your user’s environment.</p>
 </div>
 <div id="install-rstudio" class="section level2">
 <h2>Install <strong>RStudio</strong></h2>
@@ -180,10 +180,10 @@ $(document).ready(function () {
 </div>
 <div id="adjust-your-accounts-environment-variables" class="section level1">
 <h1>Adjust Your Account’s Environment Variables</h1>
-<p>Per default, <strong>R</strong>s System Library is installed in <code>C:\Program Files\R\R-3.5.0\library</code>. Here, all essential <em>base</em> packages are located. For additional packages, it is advisable to setup a User Library, e.g., at <code>C:\Users\Documents\[your user name]\R\win-library\3.5</code>. However, because [your employer] outsources your user account’s <code>C:\Users\Documents</code> folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that’s where <code>R_LIBS_USER</code> comes into play.</p>
+<p>Per default, <strong>R</strong>’s System Library is installed in <code>C:\Program Files\R\R-3.5.0\library</code>. Here, all essential <em>base</em> packages are located. For additional packages, it is advisable to setup a User Library, e.g., at <code>C:\Users\Documents\[your user name]\R\win-library\3.5</code>. However, because [your employer] outsources your user account’s <code>C:\Users\Documents</code> folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that’s where <code>R_LIBS_USER</code> comes into play.</p>
 <div id="r_libs_user-rs-and-your-user-library-for-packages" class="section level2">
 <h2><code>R_LIBS_USER</code>: <strong>R</strong>’s (and Your) User Library for Packages</h2>
-<p>As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to <code>C:\Users\[user name]</code>, where you create a new folder called <code>R</code>. Inside <code>R</code>, place a folder named <code>win-library</code>, which contains another folder called <code>3.5</code>, indicating the <strong>R</strong> version in use. You should end up with the following path: <code>C:\Users\[your user name]\R\win-library\3.5</code>. The next step is to create the <code>R_LIBS_USER</code> environment variable.</p>
+<p>As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to <code>C:\Users\[user name]</code>, where you create a new folder called <code>R</code>. Inside <code>R</code>, place a folder named <code>win-library</code>, which contains another folder called <code>3.5</code>, indicating the major <strong>R</strong> version in use. You should end up with the following path: <code>C:\Users\[your user name]\R\win-library\3.5</code>. The next step is to create the <code>R_LIBS_USER</code> environment variable.</p>
 <p>You can create your <code>R_LIBS_USER</code> environment variable in graphically. Open the Windows Settings application and start typing “environment” in the “Find a setting” search box. Out of the suggestions that appear, choose “Edit anvironment variables for your account”, which causes the “Environment Variables” window to pop up.</p>
 <p>Under “User Variables for [user name]”, click “New…” and enter the following information: “Variable name:” <code>R_LIBS_USER</code> and “Variable value:” <code>C:\Users\[user name]\R\win-library\3.5</code>.</p>
 </div>
