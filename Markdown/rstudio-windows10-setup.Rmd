@@ -1,6 +1,6 @@
 ---
-title: "Installing R and RStudio on a Windows 10 Machine"
-subtitle: "An incomplete and unofficial guide"
+title: "Installing ***R*** and ***R****Studio* on *Windows 10* with *Chocolatey*"
+subtitle: "An Incomplete and Unofficial Guide"
 author: "Raoul Wolf"
 date: "`r Sys.Date()`"
 output: html_document
@@ -8,71 +8,46 @@ output: html_document
 
 # Introduction
 
-This is a very rough and unofficial guide for setting up **R** and **RStudio** on a Windows 10 machine. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control. 
+This is a very rough and unofficial guide for setting up [***R***](https://www.r-project.org/) and [***R****Studio*](https://www.rstudio.com/) on a [*Windows 10*](https://www.microsoft.com/en-us/windows) machine using the [*Chocolatey*](https://chocolatey.org/) package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control. 
 
-All software, version numbers and links were last referenced on 2018-06-07. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
-
-# Neccessary Software
-
-The following is a list of the neccessary **software** components to download. This is based on the official [**R** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). Note that the *version* numbers are highly likely to change frequently. 
-
-* [**Git**](https://git-scm.com/) *2.18.0*: <https://git-scm.com/download/win>
-
-* [**MiKTeX**](https://miktex.org/) *2.9.6643*: <https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6643-x64.exe>
-
-* [**Inno Setup**](http://www.jrsoftware.org/isinfo.php) *5.6.1*: <http://www.jrsoftware.org/download.php/is.exe>
-
-* [**Strawberry Perl**](http://strawberryperl.com/) *5.26.2.1*: <http://strawberryperl.com/download/5.26.2.1/strawberry-perl-5.26.2.1-64bit.msi>
-
-* [**R**](https://cloud.r-project.org/index.html) *3.5.1*: <https://cloud.r-project.org/bin/windows/base/R-3.5.1-win.exe>
-
-* [**Rtools**](https://cloud.r-project.org/bin/windows/Rtools/) *3.5.0.4*: <https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe>
-
-* [**RStudio**](https://www.rstudio.com/products/rstudio/) *1.1.453*: <https://download1.rstudio.org/RStudio-1.1.453.exe>
+All software, version numbers and links were last referenced on `r Sys.Date()`. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 # Installation Procedure
 
-<span style="color:red">**Make sure to install all software with administrator privileges! You can do so by right-clicking on the file and choose "Run as administrator". If you do not install software with administrator privileges, the installation will either fail or corrupt the functionality of R. You have been warned.**</span>
+First, the *Chocolatey* package manager needs to be installed. Detailed instructions can be found [here](https://chocolatey.org/install). In short, you need to open the *Command Prompt* (`cmd.exe`) <span style="color:red">with administrative privileges</span> and execute the following chunk of code:
 
-**NOTE**: If you are using the [Chocolatey package manager](https://chocolatey.org/), you can install all necessary software from there, <span style="color:red">*except Rtools*</span>. Make sure to still follow the installation order mentioned below. 
+`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"` 
 
-## Installation Order
+If you are unsure about any of this, [RTFM](https://chocolatey.org/install). *Chocolatey* can the be used from the *Command Prompt*, but always open it <span style="color:red">with administrative privileges</span>. 
 
-Instead of installing the different software randomly, it is preferable to install the software in the following order (which is not-so-coincidentally the same order as above):
+The following is a list of the neccessary software components for the installation This is based on the official [***R*** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). The *Chocolatey* installation command is given as `code`: 
 
-1) **Git**
+* [*Git* 2.18.0](https://git-scm.com/): `choco install git`
 
-2) **MiKTeX**
+* [*MiKTeX* 2.9.6753](https://miktex.org/): `choco install miktex`
 
-3) **Inno Setup**
+* [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco install innosetup`
 
-4) **Strawberry Perl**
+* [*Strawberry Perl* 5.28.0.1](http://strawberryperl.com/): `choco install strawberryperl`
 
-5) **R**
+* [***R*** 3.5.1](https://www.r-project.org/): `choco install r.project`
 
-6) **Rtools**
+* [***R****Studio* 1.1.453](https://www.rstudio.com/): `choco install r.studio`
 
-7) **RStudio**
+* [***R****tools* 3.5.0.4](https://cloud.r-project.org/bin/windows/Rtools/): <span style="color:red">not available through *Chocolatey*!</span> See below for instructions.
 
-## Install **Git**, **MiKTeX**, **Inno Setup** and **Strawberry Perl**
+You can list installed packages with `choco list -l` and update installed packages with `choco upgrade all`. 
 
-## Install **R**
+***R****tools* needs to be downloaded  from [here](https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe) and installed manually <span style="color:red">with administrative privileges</span>. Stick with the default locations, but make sure to include all of the additional components (i.e., "Extras to build R itself: ICU, TexInfo, TclTk"), and allow ***R****tools* to create a link in your `PATH` variable.
 
-Install R using all default parameters. 
 
-## Install **Rtools**
+# Adjust Your User Account's Environment Variables
 
-Install Rtools with all additional components. That means also ticking the box "Extras to build R itself: ICU, TexInfo, TclTk". Also, allow Rtools to create a link in your user's environment. 
+Per default, ***R***'s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential base packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
-## Install **RStudio**
+## `R_LIBS_USER`: ***R***'s (and Your) User Library for Packages
 
-# Adjust Your Account's Environment Variables
-
-Per default, **R**'s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential *base* packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because [your employer] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
-
-## `R_LIBS_USER`: **R**'s (and Your) User Library for Packages
-
-As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to `C:\Users\[user name]`, where you create a new folder called `R`. Inside `R`, place a folder named `win-library`, which contains another folder called `3.5`, indicating the major **R** version in use. You should end up with the following path: `C:\Users\[your user name]\R\win-library\3.5`. The next step is to create the `R_LIBS_USER` environment variable.
+As stated above, we have to manually create the folder in which the User Library should be stored. Using the Windows Explorer app, navigate to `C:\Users\[user name]`, where you create a new folder called `R`. Inside `R`, place a folder named `win-library`, which contains another folder called `3.5`, indicating the major ***R*** version in use. You should end up with the following path: `C:\Users\[your user name]\R\win-library\3.5`. The next step is to create the `R_LIBS_USER` environment variable.
 
 You can create your `R_LIBS_USER` environment variable in graphically. Open the Windows Settings application and start typing "environment" in the "Find a setting" search box. Out of the suggestions that appear, choose "Edit anvironment variables for your account", which causes the "Environment Variables" window to pop up.
 
