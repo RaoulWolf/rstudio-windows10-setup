@@ -11,7 +11,7 @@
 
 <meta name="author" content="Raoul Wolf" />
 
-<meta name="date" content="2018-09-20" />
+<meta name="date" content="2018-09-25" />
 
 <title>Installing R and RStudio on Windows 10 with Chocolatey</title>
 
@@ -125,7 +125,7 @@ $(document).ready(function () {
 <h1 class="title toc-ignore">Installing <strong><em>R</em></strong> and <strong><em>R</em></strong><em>Studio</em> on <em>Windows 10</em> with <em>Chocolatey</em></h1>
 <h3 class="subtitle"><em>An Incomplete and Unofficial Guide</em></h3>
 <h4 class="author"><em>Raoul Wolf</em></h4>
-<h4 class="date"><em>2018-09-20</em></h4>
+<h4 class="date"><em>2018-09-25</em></h4>
 
 </div>
 
@@ -133,19 +133,19 @@ $(document).ready(function () {
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p>This is a very rough and unofficial guide for setting up <a href="https://www.r-project.org/"><strong><em>R</em></strong></a> and <a href="https://www.rstudio.com/"><strong><em>R</em></strong><em>Studio</em></a> on a <a href="https://www.microsoft.com/en-us/windows"><em>Windows 10</em></a> machine using the <a href="https://chocolatey.org/"><em>Chocolatey</em></a> package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.</p>
-<p>All software, version numbers and links were last referenced on 2018-09-20. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!</p>
+<p>All software, version numbers and links were last referenced on 2018-09-25. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!</p>
 </div>
 <div id="installation-procedure" class="section level1">
 <h1>Installation Procedure</h1>
 <p>First, the <em>Chocolatey</em> package manager needs to be installed. Detailed instructions can be found <a href="https://chocolatey.org/install">here</a>. In short, you need to open the <em>Command Prompt</em> (<code>cmd.exe</code>) <span style="color:red">with administrative privileges</span> and execute the following chunk of code:</p>
 <p><code>@&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</code></p>
-<p>If you are unsure about any of this, <a href="https://chocolatey.org/install">RTFM</a>. <em>Chocolatey</em> is used from the <em>Command Prompt</em>, but always open it <span style="color:red">with administrative privileges</span>.</p>
+<p>If you are unsure about any of this, <a href="https://chocolatey.org/install">read the official documentation</a>. <em>Chocolatey</em> is used from the <em>Command Prompt</em>, but always open it <span style="color:red">with administrative privileges</span>.</p>
 <p>The following is a list of the neccessary software components for the installation This is based on the official <a href="https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt"><strong><em>R</em></strong> project recommendations</a>. The <em>Chocolatey</em> installation command is given as <code>code</code>:</p>
 <ul>
 <li><p><a href="https://git-scm.com/"><em>Git</em> 2.19.0</a>: <code>choco install git</code></p></li>
 <li><p><a href="https://miktex.org/"><em>MiKTeX</em> 2.9.6813</a>: <code>choco install miktex</code></p></li>
 <li><p><a href="http://www.jrsoftware.org/isinfo.php"><em>Inno Setup</em> 5.6.1</a>: <code>choco install innosetup</code></p></li>
-<li><p><a href="http://qpdf.sourceforge.net/"><em>QPDF</em> 8.0.2</a>: <code>choco install qpdf</code></p></li>
+<li><p><a href="http://qpdf.sourceforge.net/"><em>QPDF</em> 8.2.1</a>: <code>choco install qpdf</code></p></li>
 <li><p><a href="http://strawberryperl.com/"><em>Strawberry Perl</em> 5.28.0.1</a>: <code>choco install strawberryperl</code></p></li>
 <li><p><a href="https://www.r-project.org/"><strong><em>R</em></strong> 3.5.1</a>: <code>choco install r.project</code></p></li>
 <li><p><a href="https://www.rstudio.com/"><strong><em>R</em></strong><em>Studio</em> 1.1.453</a>: <code>choco install r.studio</code></p></li>

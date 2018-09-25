@@ -18,7 +18,7 @@ First, the *Chocolatey* package manager needs to be installed. Detailed instruct
 
 `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"` 
 
-If you are unsure about any of this, [RTFM](https://chocolatey.org/install). *Chocolatey* is used from the *Command Prompt*, but always open it <span style="color:red">with administrative privileges</span>. 
+If you are unsure about any of this, [read the official documentation](https://chocolatey.org/install). *Chocolatey* is used from the *Command Prompt*, but always open it <span style="color:red">with administrative privileges</span>. 
 
 The following is a list of the neccessary software components for the installation This is based on the official [***R*** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). The *Chocolatey* installation command is given as `code`: 
 
@@ -28,7 +28,7 @@ The following is a list of the neccessary software components for the installati
 
 * [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco install innosetup`
 
-* [*QPDF* 8.0.2](http://qpdf.sourceforge.net/): `choco install qpdf`
+* [*QPDF* 8.2.1](http://qpdf.sourceforge.net/): `choco install qpdf`
 
 * [*Strawberry Perl* 5.28.0.1](http://strawberryperl.com/): `choco install strawberryperl`
 
