@@ -9,7 +9,7 @@ Introduction
 
 This is a very rough and unofficial guide for setting up [***R***](https://www.r-project.org/) and [***R****Studio*](https://www.rstudio.com/) on a [*Windows 10*](https://www.microsoft.com/en-us/windows) machine using the [*Chocolatey*](https://chocolatey.org/) package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.
 
-All software, version numbers and links were last referenced on 2018-10-24. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
+All software, version numbers and links were last referenced on 2018-11-01. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 Installation Procedure
 ======================
@@ -34,7 +34,7 @@ The following is a list of the neccessary software components for the installati
 
 -   [***R*** 3.5.1](https://www.r-project.org/): `choco install r.project`
 
--   [***R****Studio* 1.1.456](https://www.rstudio.com/): `choco install r.studio`
+-   [***R****Studio* 1.1.463](https://www.rstudio.com/): `choco install r.studio`
 
 -   [***R****tools* 3.5.0.4](https://cloud.r-project.org/bin/windows/Rtools/): <span style="color:red">not available through *Chocolatey*!</span> See below for instructions.
 
