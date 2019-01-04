@@ -9,7 +9,7 @@ Introduction
 
 This is a very rough and unofficial guide for setting up [***R***](https://www.r-project.org/) and [***R****Studio*](https://www.rstudio.com/) on a [*Windows 10*](https://www.microsoft.com/en-us/windows) machine using the [*Chocolatey*](https://chocolatey.org/) package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.
 
-All software, version numbers and links were last referenced on 2018-11-01. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
+All software, version numbers and links were last referenced on 2019-01-04. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 Installation Procedure
 ======================
@@ -18,11 +18,11 @@ First, the *Chocolatey* package manager needs to be installed. Detailed instruct
 
 `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
 
-If you are unsure about any of this, [read the official documentation](https://chocolatey.org/install). *Chocolatey* is used from the *Command Prompt*, but always open it <span style="color:red">with administrative privileges</span>.
+If you are unsure about any of this, [read the official documentation](https://chocolatey.org/install). *Chocolatey* is used from the *PowerShell*, but always open it <span style="color:red">with administrative privileges</span>.
 
 The following is a list of the neccessary software components for the installation This is based on the official [***R*** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). The *Chocolatey* installation command is given as `code`:
 
--   [*Git* 2.19.1](https://git-scm.com/): `choco install git`
+-   [*Git* 2.20.1](https://git-scm.com/): `choco install git`
 
 -   [*MiKTeX* 2.9.6850](https://miktex.org/): `choco install miktex`
 
@@ -30,9 +30,9 @@ The following is a list of the neccessary software components for the installati
 
 -   [*QPDF* 8.2.1](http://qpdf.sourceforge.net/): `choco install qpdf`
 
--   [*Strawberry Perl* 5.28.0.1](http://strawberryperl.com/): `choco install strawberryperl`
+-   [*Strawberry Perl* 5.28.1.1](http://strawberryperl.com/): `choco install strawberryperl`
 
--   [***R*** 3.5.1](https://www.r-project.org/): `choco install r.project`
+-   [***R*** 3.5.2](https://www.r-project.org/): `choco install r.project`
 
 -   [***R****Studio* 1.1.463](https://www.rstudio.com/): `choco install r.studio`
 
@@ -45,7 +45,7 @@ You can list installed packages with `choco list -l` and update installed packag
 Adjust Your User Account's Environment Variables
 ================================================
 
-Per default, ***R***'s System Library is installed in `C:\Program Files\R\R-3.5.0\library`. Here, all essential base packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because \[your employer\] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
+Per default, ***R***'s System Library is installed in `C:\Program Files\R\R-3.5.2\library`. Here, all essential base packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because \[your employer\] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
 `R_LIBS_USER`: ***R***'s (and Your) User Library for Packages
 -------------------------------------------------------------
