@@ -9,7 +9,7 @@ Introduction
 
 This is a very rough and unofficial guide for setting up [***R***](https://www.r-project.org/) and [***R****Studio*](https://www.rstudio.com/) on a [*Windows 10*](https://www.microsoft.com/en-us/windows) machine using the [*Chocolatey*](https://chocolatey.org/) package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.
 
-All software, version numbers and links were last referenced on 2019-01-04. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
+All software, version numbers and links were last referenced on 2019-02-15. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 Installation Procedure
 ======================
@@ -24,11 +24,11 @@ The following is a list of the neccessary software components for the installati
 
 -   [*Git* 2.20.1](https://git-scm.com/): `choco install git`
 
--   [*MiKTeX* 2.9.6850](https://miktex.org/): `choco install miktex`
+-   [*MiKTeX* 2.9.6942](https://miktex.org/): `choco install miktex`
 
 -   [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco install innosetup`
 
--   [*QPDF* 8.2.1](http://qpdf.sourceforge.net/): `choco install qpdf`
+-   [*QPDF* 8.4.0](http://qpdf.sourceforge.net/): `choco install qpdf`
 
 -   [*Strawberry Perl* 5.28.1.1](http://strawberryperl.com/): `choco install strawberryperl`
 
