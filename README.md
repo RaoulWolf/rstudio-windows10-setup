@@ -9,7 +9,7 @@ Introduction
 
 This is a very rough and unofficial guide for setting up [***R***](https://www.r-project.org/) and [***R****Studio*](https://www.rstudio.com/) on a [*Windows 10*](https://www.microsoft.com/en-us/windows) machine using the [*Chocolatey*](https://chocolatey.org/) package manager. The aim is to ensure as much functionality as possible, e.g., being able to install packages from source and using version control.
 
-All software, version numbers and links were last referenced on 2019-02-15. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
+All software, version numbers and links were last referenced on 2019-04-03. The below combination of software and version numbers works reasonably well. Update the software versions at your own risk!
 
 Installation Procedure
 ======================
@@ -45,7 +45,7 @@ You can list installed packages with `choco list -l` and update installed packag
 Adjust Your User Account's Environment Variables
 ================================================
 
-Per default, ***R***'s System Library is installed in `C:\Program Files\R\R-3.5.2\library`. Here, all essential base packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because \[your employer\] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
+Per default, ***R***'s System Library is installed in `C:\Program Files\R\R-3.5.3\library`. Here, all essential base packages are located. For additional packages, it is advisable to setup a User Library, e.g., at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However, because \[your employer\] outsources your user account's `C:\Users\Documents` folder to another server (for backup reasons), we need to create and specify a new location for the user package library; that's where `R_LIBS_USER` comes into play.
 
 `R_LIBS_USER`: ***R***'s (and Your) User Library for Packages
 -------------------------------------------------------------
