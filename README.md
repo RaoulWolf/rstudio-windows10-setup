@@ -22,7 +22,7 @@ If you are unsure about any of this, [read the official documentation](https://c
 
 The following is a list of the neccessary software components for the installation This is based on the official [***R*** project recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt). The *Chocolatey* installation command is given as `code`:
 
--   [*Git* 2.20.1](https://git-scm.com/): `choco install git`
+-   [*Git* 2.21.0](https://git-scm.com/): `choco install git`
 
 -   [*MiKTeX* 2.9.6942](https://miktex.org/): `choco install miktex`
 
@@ -32,7 +32,7 @@ The following is a list of the neccessary software components for the installati
 
 -   [*Strawberry Perl* 5.28.1.1](http://strawberryperl.com/): `choco install strawberryperl`
 
--   [***R*** 3.5.2](https://www.r-project.org/): `choco install r.project`
+-   [***R*** 3.5.3](https://www.r-project.org/): `choco install r.project`
 
 -   [***R****Studio* 1.1.463](https://www.rstudio.com/): `choco install r.studio`
 
