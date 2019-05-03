@@ -14,7 +14,7 @@ to ensure as much functionality as possible, e.g., being able to install
 packages from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-04-23. The below combination of software and version numbers works
+2019-05-03. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -48,12 +48,12 @@ The *Chocolatey* installation command is given as `code`:
   - [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco
     install innosetup`
 
-  - [*QPDF* 8.4.0](http://qpdf.sourceforge.net/): `choco install qpdf`
+  - [*QPDF* 8.4.1](http://qpdf.sourceforge.net/): `choco install qpdf`
 
   - [*Strawberry Perl* 5.28.1.1](http://strawberryperl.com/): `choco
     install strawberryperl`
 
-  - [***R*** 3.5.3](https://www.r-project.org/): `choco install
+  - [***R*** 3.6.0](https://www.r-project.org/): `choco install
     r.project`
 
   - [***R****Studio* 1.2.1335](https://www.rstudio.com/): `choco install
@@ -78,9 +78,9 @@ in your `PATH` variable.
 # Adjust Your User Account’s Environment Variables
 
 Per default, ***R***’s System Library is installed in `C:\Program
-Files\R\R-3.5.3\library`. Here, all essential base packages are located.
+Files\R\R-3.6.0\library`. Here, all essential base packages are located.
 For additional packages, it is advisable to setup a User Library, e.g.,
-at `C:\Users\Documents\[your user name]\R\win-library\3.5`. However,
+at `C:\Users\Documents\[your user name]\R\win-library\3.6`. However,
 because \[your employer\] outsources your user account’s
 `C:\Users\Documents` folder to another server (for backup reasons), we
 need to create and specify a new location for the user package library;
@@ -92,9 +92,9 @@ As stated above, we have to manually create the folder in which the User
 Library should be stored. Using the Windows Explorer app, navigate to
 `C:\Users\[user name]`, where you create a new folder called `R`. Inside
 `R`, place a folder named `win-library`, which contains another folder
-called `3.5`, indicating the major ***R*** version in use. You should
+called `3.6`, indicating the major ***R*** version in use. You should
 end up with the following path: `C:\Users\[your user
-name]\R\win-library\3.5`. The next step is to create the `R_LIBS_USER`
+name]\R\win-library\3.6`. The next step is to create the `R_LIBS_USER`
 environment variable.
 
 You can create your `R_LIBS_USER` environment variable in graphically.
@@ -105,4 +105,4 @@ choose “Edit anvironment variables for your account”, which causes the
 
 Under “User Variables for \[user name\]”, click “New…” and enter the
 following information: “Variable name:” `R_LIBS_USER` and “Variable
-value:” `C:\Users\[user name]\R\win-library\3.5`.
+value:” `C:\Users\[user name]\R\win-library\3.6`.
