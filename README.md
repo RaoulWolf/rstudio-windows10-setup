@@ -14,7 +14,7 @@ to ensure as much functionality as possible, e.g., being able to install
 packages from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-05-03. The below combination of software and version numbers works
+2019-05-06. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -50,7 +50,7 @@ The *Chocolatey* installation command is given as `code`:
 
   - [*QPDF* 8.4.1](http://qpdf.sourceforge.net/): `choco install qpdf`
 
-  - [*Strawberry Perl* 5.28.1.1](http://strawberryperl.com/): `choco
+  - [*Strawberry Perl* 5.28.2.1](http://strawberryperl.com/): `choco
     install strawberryperl`
 
   - [***R*** 3.6.0](https://www.r-project.org/): `choco install
