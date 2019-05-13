@@ -14,7 +14,7 @@ to ensure as much functionality as possible, e.g., being able to install
 packages from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-05-06. The below combination of software and version numbers works
+2019-05-13. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -43,7 +43,7 @@ The *Chocolatey* installation command is given as `code`:
 
   - [*Git* 2.21.0](https://git-scm.com/): `choco install git`
 
-  - [*MiKTeX* 2.9.6942](https://miktex.org/): `choco install miktex`
+  - [*MiKTeX* 2.9.7031](https://miktex.org/): `choco install miktex`
 
   - [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco
     install innosetup`
