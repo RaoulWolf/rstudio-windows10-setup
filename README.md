@@ -21,20 +21,17 @@ reasonably well. Update the software versions at your own risk\!
 
 First, the *Chocolatey* package manager needs to be installed. Detailed
 instructions can be found [here](https://chocolatey.org/install). In
-short, you need to open the *Command Prompt* (`cmd.exe`)
+short, you need to open *Windows PowerShell* (`powershell.exe`)
 <span style="color:red">with administrative privileges</span> and
 execute the following chunk of code:
 
-`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe"
--NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex
-((New-Object
-System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-&& SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object
+System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 If you are unsure about any of this, [read the official
 documentation](https://chocolatey.org/install). *Chocolatey* is used
-from the *PowerShell*, but always open it <span style="color:red">with
-administrative privileges</span>.
+from *Windows PowerShell*, but always open it
+<span style="color:red">with administrative privileges</span>.
 
 The following is a list of the neccessary software components for the
 installation This is based on the official [***R*** project
