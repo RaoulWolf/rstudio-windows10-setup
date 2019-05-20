@@ -14,7 +14,7 @@ to ensure as much functionality as possible, e.g., being able to install
 packages from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-05-13. The below combination of software and version numbers works
+2019-05-20. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -45,7 +45,7 @@ The *Chocolatey* installation command is given as `code`:
   - [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco
     install innosetup`
 
-  - [*QPDF* 8.4.1](http://qpdf.sourceforge.net/): `choco install qpdf`
+  - [*QPDF* 8.4.2](http://qpdf.sourceforge.net/): `choco install qpdf`
 
   - [*Strawberry Perl* 5.28.2.1](http://strawberryperl.com/): `choco
     install strawberryperl`
