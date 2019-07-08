@@ -14,7 +14,7 @@ to ensure as much functionality as possible, e.g., being able to install
 packages from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-05-20. The below combination of software and version numbers works
+2019-07-08. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -30,47 +30,37 @@ System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 If you are unsure about any of this, [read the official
 documentation](https://chocolatey.org/install). *Chocolatey* is used
-from *Windows PowerShell*, but always open it
-<span style="color:red">with administrative privileges</span>.
+from *Windows PowerShell* <span style="color:red">with administrative
+privileges</span>.
 
 The following is a list of the neccessary software components for the
-installation This is based on the official [***R*** project
+installation. This is based on the official [***R*** project
 recommendations](https://cloud.r-project.org/bin/windows/Rtools/Rtools.txt).
 The *Chocolatey* installation command is given as `code`:
 
-  - [*Git* 2.21.0](https://git-scm.com/): `choco install git`
+  - [*Git* 2.22.0](https://git-scm.com/): `choco install git`
 
-  - [*MiKTeX* 2.9.7031](https://miktex.org/): `choco install miktex`
+  - [*MiKTeX* 2.9.7100](https://miktex.org/): `choco install miktex`
 
-  - [*Inno Setup* 5.6.1](http://www.jrsoftware.org/isinfo.php): `choco
+  - [*Inno Setup* 6.0.2](http://www.jrsoftware.org/isinfo.php): `choco
     install innosetup`
 
   - [*QPDF* 8.4.2](http://qpdf.sourceforge.net/): `choco install qpdf`
 
-  - [*Strawberry Perl* 5.28.2.1](http://strawberryperl.com/): `choco
+  - [*Strawberry Perl* 5.30.0.1](http://strawberryperl.com/): `choco
     install strawberryperl`
 
-  - [***R*** 3.6.0](https://www.r-project.org/): `choco install
-    r.project`
+  - [***R*** 3.6.1](https://www.r-project.org/): `choco install r`
+
+  - [***R****tools*
+    3.5](https://cloud.r-project.org/bin/windows/Rtools/): `choco
+    install rtools`
 
   - [***R****Studio* 1.2.1335](https://www.rstudio.com/): `choco install
     r.studio`
 
-  - [***R****tools*
-    3.5.0.4](https://cloud.r-project.org/bin/windows/Rtools/):
-    <span style="color:red">not available through *Chocolatey*\!</span>
-    See below for instructions.
-
 You can list installed packages with `choco list -l` and update
 installed packages with `choco upgrade all`.
-
-***R****tools* needs to be downloaded from
-[here](https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe) and
-installed manually <span style="color:red">with administrative
-privileges</span>. Stick with the default locations, but make sure to
-include all of the additional components (i.e., “Extras to build R
-itself: ICU, TexInfo, TclTk”), and allow ***R****tools* to create a link
-in your `PATH` variable.
 
 # Adjust Your User Account’s Environment Variables
 
