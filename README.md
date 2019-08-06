@@ -13,7 +13,7 @@ ensure as much functionality as possible, e.g., being able to install
 packages (and even R itself) from source and using version control.
 
 All software, version numbers and links were last referenced on
-2019-07-24. The below combination of software and version numbers works
+2019-08-06. The below combination of software and version numbers works
 reasonably well. Update the software versions at your own risk\!
 
 # Installation Procedure
@@ -39,7 +39,7 @@ The Chocolatey installation command is given as `code`:
 
   - [Git 2.22.0](https://git-scm.com/): `choco install git`
 
-  - [MiKTeX 2.9.7100](https://miktex.org/): `choco install miktex`
+  - [MiKTeX 2.9.7152](https://miktex.org/): `choco install miktex`
 
   - [Inno Setup 6.0.2](http://www.jrsoftware.org/isinfo.php): `choco
     install innosetup`
